@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sunderville.tanks.controllers.InformationController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="61.0" prefHeight="539.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Text layoutX="21.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Примечания">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Text>
+                <Text fill="#a4a4a4" layoutX="21.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="По расчётам">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Text>
+                <Text fill="#a4a4a4" layoutX="21.0" layoutY="420.0" strokeType="OUTSIDE" strokeWidth="0.0" text="По приложению">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </Text>
+                <Text layoutX="19.0" layoutY="231.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4. Высота каждого пояса принята за 1500 мм. Высота РВС-30000 и 50000 принята за 18 м." wrappingWidth="663.0" />
+                <Text layoutX="19.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5. Ширина окрайки днища - 1330 мм. Для резервуаров без окрайки необходимо указывать одинаковую толщину в обоих полях." wrappingWidth="663.0" />
+                <Text layoutX="19.0" layoutY="282.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6. Используемые в расчётах толщины кровли по умолчанию:" wrappingWidth="663.0" />
+                <Text layoutX="222.0" layoutY="316.0" strokeType="OUTSIDE" strokeWidth="0.0" text="для РВС-300, 400, 500, 700, 20000, 30000, 50000  -  5 мм," wrappingWidth="319.0" />
+                <Text layoutX="222.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="для РВС-1000  -  6 мм." wrappingWidth="140.0" />
+                <Text layoutX="19.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2. Обязательные для заполнения поля - толщины поясов стенки и диаметр." wrappingWidth="663.0" />
+                <Text layoutX="19.0" layoutY="167.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3. При наличии только данных по стенке считается только стенка. При добавлении второго основного элемента (днище или крыша) считается только вес соответствующих элементов. При вводе данных по всем трём основным элементам (стенка, днище, крыша) считается масса всего резервуара, включая вспомогательные элементы (лестница, площадки, люки, патрубки, каркасы/упаковка)." wrappingWidth="663.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#949494" height="327.0" layoutX="15.0" layoutY="54.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="671.0" />
+                <Text layoutX="19.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7. Массы кровли по умолчанию и массы вспомогательных элементов доступны для редактирования через Technical_data.properties" wrappingWidth="663.0" />
+                <Text layoutX="19.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Расчёт стенки и днища основывается на геометрических показателях и не учитывает технологические особенности изготовления (наплавленный металл, отходы, др.). Общие массы комплектующих и исходные массы крыши взяты из открытых и распространённых справочных материалов. Фактическая масса крыши высчитывается обобщённо - как отношение введённой пользователем толщины металла к дефолтной, без учёта типа конструкции (каркасная, самонесущая, щитовая)." wrappingWidth="663.0" />
+                <Text layoutX="19.0" layoutY="443.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1. Приложение выполнено средствами языка Java. Для запуска необходимо наличие на компьютере пользователя установленной среды исполнeния JRE версии 8 или более поздней. Скачать её можно, например, здесь: https://java.com/ru/download/windows-64bit.jsp  либо через результаты выдачи поисковика." wrappingWidth="663.0" />
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#949494" height="64.0" layoutX="15.0" layoutY="430.0" opacity="0.15" stroke="BLACK" strokeType="INSIDE" width="671.0" />
+                <Text layoutX="222.0" layoutY="299.0" strokeType="OUTSIDE" strokeWidth="0.0" text="для РВС-50, 100, 200, 2000, 3000, 5000, 10000 - 4 мм," wrappingWidth="319.0" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="262.0" layoutY="14.0" text="Tanks Calculator" textAlignment="CENTER" textFill="#f2ebeb">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

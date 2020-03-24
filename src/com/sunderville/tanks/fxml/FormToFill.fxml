@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" >
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="61.0" prefHeight="316.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Button fx:id="save_log_button" layoutX="524.0" layoutY="200.0" mnemonicParsing="false" onMouseClicked="#saveLogButtonPressed" prefHeight="104.0" prefWidth="148.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="Сохранить расчёт">
+                    <font>
+                        <Font name="System Bold" size="14.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="customer_name" layoutX="259.0" layoutY="28.0" prefHeight="25.0" prefWidth="416.0" />
+                <Text layoutX="31.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Название заказчика" />
+                <MenuButton fx:id="form_of_property_menubutton" layoutX="159.0" layoutY="28.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="82.0" text="форма собственности">
+                    <items>
+                        <MenuItem fx:id="OOO" mnemonicParsing="false" onAction="#OOO" text="ООО" />
+                        <MenuItem fx:id="AO" mnemonicParsing="false" onAction="#AO" text="АО" />
+                        <MenuItem fx:id="PAO" mnemonicParsing="false" onAction="#PAO" text="ПАО" />
+                        <MenuItem fx:id="MUP" mnemonicParsing="false" onAction="#MUP" text="МУП" />
+                        <MenuItem fx:id="IP" mnemonicParsing="false" onAction="#IP" text="ИП" />
+                        <MenuItem fx:id="individual" mnemonicParsing="false" onAction="#individual" text="частное лицо" />
+                        <MenuItem fx:id="other_property_form" mnemonicParsing="false" onAction="#other_property_form" text="др." />
+                    </items>
+               <font>
+                  <Font size="10.0" />
+               </font>
+                </MenuButton>
+                <Text fill="#c9b8b8" layoutX="310.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ФИО" />
+            <TextField fx:id="contact_name" layoutX="346.0" layoutY="62.0" prefHeight="25.0" prefWidth="330.0" />
+            <Text layoutX="32.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Контакт" />
+            <TextField fx:id="phone_number" layoutX="159.0" layoutY="62.0" prefHeight="25.0" prefWidth="133.0" />
+            <Text fill="#c9b8b8" layoutX="115.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="тел." />
+            <Text layoutX="32.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Пункт доставки" />
+            <Text layoutX="429.0" layoutY="120.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Количество заказываемых единиц" />
+            <Text layoutX="32.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Планируемое начало реализации проекта" />
+            <Text layoutX="32.0" layoutY="213.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Комментарии" />
+            <TextField fx:id="haul_to" layoutX="160.0" layoutY="103.0" prefHeight="25.0" prefWidth="190.0" />
+            <TextField fx:id="quantity" layoutX="632.0" layoutY="103.0" prefHeight="25.0" prefWidth="43.0" />
+            <TextArea fx:id="comment_field" layoutX="123.0" layoutY="201.0" prefHeight="104.0" prefWidth="391.0" />
+            <MenuButton fx:id="month" layoutX="292.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="111.0" text="месяц">
+               <items>
+                  <MenuItem fx:id="january" mnemonicParsing="false" onAction="#january" text="январь" />
+                  <MenuItem fx:id="february" mnemonicParsing="false" onAction="#february" text="февраль" />
+                  <MenuItem fx:id="march" mnemonicParsing="false" onAction="#march" text="март" />
+                  <MenuItem fx:id="april" mnemonicParsing="false" onAction="#april" text="апрель" />
+                  <MenuItem fx:id="may" mnemonicParsing="false" onAction="#may" text="май" />
+                  <MenuItem fx:id="june" mnemonicParsing="false" onAction="#june" text="июнь" />
+                  <MenuItem fx:id="july" mnemonicParsing="false" onAction="#july" text="июль" />
+                  <MenuItem fx:id="august" mnemonicParsing="false" onAction="#august" text="август" />
+                  <MenuItem fx:id="september" mnemonicParsing="false" onAction="#september" text="сентябрь" />
+                  <MenuItem fx:id="october" mnemonicParsing="false" onAction="#october" text="октябрь" />
+                  <MenuItem fx:id="november" mnemonicParsing="false" onAction="#november" text="ноябрь" />
+                  <MenuItem fx:id="december" mnemonicParsing="false" onAction="#december" text="декабрь" />
+                  <MenuItem fx:id="unknowember" mnemonicParsing="false" onAction="#unknowember" text="хрензнаябрь" />
+               </items>
+            </MenuButton>
+            <MenuButton fx:id="year" layoutX="413.0" layoutY="151.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="67.0" text="год">
+               <items>
+                  <MenuItem fx:id="year2020" mnemonicParsing="false" onAction="#year2020" text="2020" />
+                  <MenuItem fx:id="year2021" mnemonicParsing="false" onAction="#year2021" text="2021" />
+                  <MenuItem fx:id="year2022" mnemonicParsing="false" onAction="#year2022" text="2022" />
+                  <MenuItem fx:id="year2023" mnemonicParsing="false" onAction="#year2023" text="2023" />
+                  <MenuItem fx:id="year2024" mnemonicParsing="false" onAction="#year2024" text="2024" />
+                  <MenuItem fx:id="year2025" mnemonicParsing="false" onAction="#year2025" text="2025" />
+                  <MenuItem fx:id="year2026" mnemonicParsing="false" onAction="#year2026" text="2026" />
+                  <MenuItem fx:id="year2027" mnemonicParsing="false" onAction="#year2027" text="2027" />
+                  <MenuItem fx:id="year2028" mnemonicParsing="false" onAction="#year2028" text="2028" />
+                  <MenuItem fx:id="year2029" mnemonicParsing="false" onAction="#year2029" text="2029" />
+               </items>
+            </MenuButton>
+            </children>
+        </AnchorPane>
+        <Label layoutX="262.0" layoutY="14.0" text="Tanks Calculator" textAlignment="CENTER" textFill="#f2ebeb">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

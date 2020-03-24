@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" style="-fx-background-color: #2E3348;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.sunderville.tanks.controllers.MainWindowController">
+    <children>
+        <AnchorPane layoutX="-1.0" layoutY="61.0" prefHeight="539.0" prefWidth="700.0" style="-fx-background-color: #fafafa;">
+            <children>
+                <Text layoutX="34.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стенка">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Диаметр" />
+                <Text layoutX="171.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", мм" />
+                <Text layoutX="14.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Толщина по поясам (мм)" />
+                <TextField fx:id="ring12" layoutX="95.0" layoutY="128.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="145.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18000" />
+                <Text layoutX="38.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 пояс" />
+                <TextField fx:id="ring11" layoutX="95.0" layoutY="159.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="38.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" text="11 пояс" />
+                <TextField fx:id="ring10" layoutX="95.0" layoutY="190.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="145.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15000" />
+                <Text layoutX="38.0" layoutY="207.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10 пояс" />
+                <TextField fx:id="ring9" layoutX="95.0" layoutY="222.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="38.0" layoutY="239.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9 пояс" />
+                <TextField fx:id="ring8" layoutX="95.0" layoutY="253.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="145.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12000" />
+                <Text layoutX="38.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8 пояс" />
+                <TextField fx:id="ring7" layoutX="95.0" layoutY="284.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="38.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7 пояс" />
+                <TextField fx:id="ring6" layoutX="95.0" layoutY="316.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="145.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="9000" />
+                <Text layoutX="38.0" layoutY="333.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6 пояс" />
+                <TextField fx:id="ring5" layoutX="95.0" layoutY="347.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="145.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7500" />
+                <Text layoutX="38.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5 пояс" />
+                <TextField fx:id="ring4" layoutX="95.0" layoutY="378.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="145.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6000" />
+                <Text layoutX="38.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4 пояс" />
+                <TextField fx:id="ring3" layoutX="95.0" layoutY="407.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="145.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4500" />
+                <Text layoutX="38.0" layoutY="424.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3 пояс" />
+                <TextField fx:id="ring2" layoutX="95.0" layoutY="438.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="38.0" layoutY="455.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2 пояс" />
+                <TextField fx:id="ring1" layoutX="95.0" layoutY="469.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="38.0" layoutY="486.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1 пояс" />
+                <Text layoutX="265.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Днище">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="bottom_center_thikness" layoutX="289.0" layoutY="72.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="339.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", мм" />
+                <Text layoutX="232.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Центр" />
+                <TextField fx:id="bottom_rim_thikness" layoutX="289.0" layoutY="106.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="339.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", мм" />
+                <Text layoutX="232.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Окрайка" />
+                <Text layoutX="459.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Крыша">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Text>
+                <TextField fx:id="roof_thikness" layoutX="512.0" layoutY="72.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="562.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", мм" />
+                <Text layoutX="458.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Настил" />
+                <Text layoutX="241.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Дополнительные элементы">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Text>
+                <Button fx:id="log_button" layoutX="534.0" layoutY="482.0" mnemonicParsing="false" onMouseClicked="#logButtonPressed" prefHeight="25.0" prefWidth="148.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" text="Сформировать лог" />
+                <Button fx:id="calculate_button" layoutX="534.0" layoutY="408.0" mnemonicParsing="false" onMouseClicked="#calculateButtonPressed" prefHeight="60.0" prefWidth="148.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" text="Посчитать">
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Button>
+                <TextField fx:id="insulation_weight" layoutX="443.0" layoutY="195.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="493.0" layoutY="212.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", т" />
+                <Text layoutX="237.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Крепление теплоизоляции" />
+                <TextField fx:id="heater_weight" layoutX="443.0" layoutY="226.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="493.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", т" />
+                <Text layoutX="237.0" layoutY="242.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Внутренний нагреватель" />
+                <TextField fx:id="other_weight1" layoutX="443.0" layoutY="257.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="493.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", т" />
+                <Text layoutX="237.0" layoutY="273.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Другое" />
+                <TextField fx:id="other_weight2" layoutX="443.0" layoutY="289.0" prefHeight="25.0" prefWidth="39.0" />
+                <Text layoutX="493.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text=", т" />
+                <Text layoutX="237.0" layoutY="305.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Другое" />
+                <TextField fx:id="other_weight1_name" layoutX="286.0" layoutY="261.0" prefHeight="19.0" prefWidth="132.0">
+                    <font>
+                        <Font size="9.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="other_weight2_name" layoutX="284.0" layoutY="293.0" prefHeight="19.0" prefWidth="133.0">
+                    <font>
+                        <Font size="9.0" />
+                    </font>
+                </TextField>
+                <Text layoutX="549.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Марка стали">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Text>
+                <MenuButton fx:id="steel_type" layoutX="546.0" layoutY="198.0" mnemonicParsing="false" text="Ст3сп">
+                    <items>
+                        <MenuItem fx:id="sSt3selection" mnemonicParsing="false" onAction="#sSt3selected" text="Ст3сп" />
+                        <MenuItem fx:id="s09selection" mnemonicParsing="false" onAction="#s09selected" text="09Г2С" />
+                        <MenuItem fx:id="s12selection" mnemonicParsing="false" onAction="#s12selected" text="12Х18Н10Т" />
+                    </items>
+                </MenuButton>
+                <TextField fx:id="result_mass" layoutX="394.0" layoutY="408.0" prefHeight="101.0" prefWidth="120.0">
+                    <font>
+                        <Font name="System Bold" size="32.0" />
+                    </font>
+                </TextField>
+                <TextField fx:id="ton_price" layoutX="540.0" layoutY="278.0" prefHeight="35.0" prefWidth="148.0" />
+                <Text layoutX="393.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Масса (т)" />
+                <Text layoutX="545.0" layoutY="274.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Цена за тонну (тыс. руб.)" />
+                <TextField fx:id="result_price" layoutX="236.0" layoutY="456.0" prefHeight="51.0" prefWidth="148.0">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font></TextField>
+                <Text layoutX="241.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Стоимость м/к (тыс. руб.)" />
+                <Line endX="-5.0" endY="411.0" layoutX="215.0" layoutY="112.0" startX="-5.0" startY="-92.0" />
+                <MenuButton fx:id="diameter" layoutX="70.0" layoutY="39.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="96.0" text="Выберите диаметр">
+                    <items>
+                        <MenuItem fx:id="d3800" mnemonicParsing="false" onAction="#d3800s" text="3800" />
+                        <MenuItem fx:id="d4730" mnemonicParsing="false" onAction="#d4730s" text="4730" />
+                        <MenuItem fx:id="d6630" mnemonicParsing="false" onAction="#d6630s" text="6630" />
+                        <MenuItem fx:id="d7580" mnemonicParsing="false" onAction="#d7580s" text="7580" />
+                        <MenuItem fx:id="d8530" mnemonicParsing="false" onAction="#d8530s" text="8530" />
+                        <MenuItem fx:id="d10430" mnemonicParsing="false" onAction="#d10430s" text="10430" />
+                        <MenuItem fx:id="d15180" mnemonicParsing="false" onAction="#d15180s" text="15180" />
+                        <MenuItem fx:id="d18980" mnemonicParsing="false" onAction="#d18980s" text="18980" />
+                        <MenuItem fx:id="d20920" mnemonicParsing="false" onAction="#d20920s" text="20920" />
+                        <MenuItem fx:id="d22800" mnemonicParsing="false" onAction="#d22800s" text="22800" />
+                        <MenuItem fx:id="d28500" mnemonicParsing="false" onAction="#d28500s" text="28500" />
+                        <MenuItem fx:id="d34200" mnemonicParsing="false" onAction="#d34200s" text="34200" />
+                        <MenuItem fx:id="d39900" mnemonicParsing="false" onAction="#d39900s" text="39900" />
+                        <MenuItem fx:id="d45600" mnemonicParsing="false" onAction="#d45600s" text="45600" />
+                        <MenuItem fx:id="d60700" mnemonicParsing="false" onAction="#d60700s" text="60700" />
+                    </items>
+                </MenuButton>
+                <Text fill="#c9b8b8" layoutX="230.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Толщина" />
+                <Text fill="#b5a4a4" layoutX="457.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Толщина" />
+            </children>
+        </AnchorPane>
+        <Label layoutX="262.0" layoutY="14.0" text="Tanks Calculator" textAlignment="CENTER" textFill="#f2ebeb">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+        <Button fx:id="information_button" layoutX="582.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#informationButtonPressed" prefHeight="25.0" prefWidth="104.0" style="-fx-border-radius: 10; -fx-background-radius: 10;" text="Информация" />
+    </children>
+</AnchorPane>
